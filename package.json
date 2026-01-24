@@ -1,0 +1,33 @@
+{
+  "name": "it4it",
+  "version": "1.0.0",
+  "description": "IT4IT Reference Architecture for managing the business of IT",
+  "main": "README.md",
+  "keywords": [
+    "it4it",
+    "it-management",
+    "value-stream",
+    "itsm",
+    "devops",
+    "service-management",
+    "deeparchi"
+  ],
+  "author": "DeepArchi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuangmi-bit/it4it-skill.git"
+  },
+  "files": [
+    "README.md",
+    "EXAMPLES.md",
+    "references/**/*",
+    "scripts/**/*",
+    "assets/**/*"
+  ],
+  "skill": {
+    "name": "it4it",
+    "description": "IT4IT Reference Architecture for managing the business of IT. Provides value chain framework with four value streams (S2P, D2F, S2D, C2R), functional components, data object model, and implementation guidance.",
+    "version": "1.0.0"
+  }
+}

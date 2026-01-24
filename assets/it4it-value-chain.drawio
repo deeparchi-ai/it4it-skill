@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-01-24T00:00:00.000Z" agent="IT4IT Skill" version="21.7.5">
+  <diagram id="value-chain" name="IT4IT Value Chain">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="IT4IT Reference Architecture - Value Chain" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Primary Value Streams -->
+        <mxCell id="vs_header" value="Primary Value Streams" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- S2P -->
+        <mxCell id="s2p" value="Strategy to Portfolio&#xa;(S2P)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p_desc" value="将业务战略转化为 IT 投资组合&#xa;输出: Conceptual Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="280" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- D2F -->
+        <mxCell id="d2f" value="Design to Fulfill&#xa;(D2F)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="d2f_desc" value="设计、开发和交付 IT 服务&#xa;输出: Logical Service, Service Release" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="280" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- S2D -->
+        <mxCell id="s2d" value="Source to Deploy&#xa;(S2D)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="720" y="120" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s2d_desc" value="采购、构建和部署 IT 资源&#xa;输出: Actual Service, CI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="720" y="200" width="280" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- C2R -->
+        <mxCell id="c2r" value="Consume to Retire&#xa;(C2R)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="120" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c2r_desc" value="管理服务消费、支持和退役&#xa;输出: Service Contract, Usage Data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="200" width="280" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows between value streams -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="s2p" target="d2f">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="d2f" target="s2d">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="s2d" target="c2r">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Service Backbone -->
+        <mxCell id="backbone_header" value="Service Backbone" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="260" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="backbone_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="300" width="1240" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="cs" value="Conceptual&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ls" value="Logical&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="as" value="Actual&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sc" value="Service&#xa;Contract" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="bb_arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="cs" target="ls">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bb_arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="ls" target="as">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bb_arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="as" target="sc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Functional Components -->
+        <mxCell id="fc_header" value="Key Functional Components" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- S2P Components -->
+        <mxCell id="s2p_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p_c1" value="Strategy Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p_c2" value="Portfolio Demand" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="230" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p_c3" value="Proposal Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p_c4" value="Policy Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="230" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p_c5" value="Portfolio Planning" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2p_c6" value="Portfolio Approval" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="230" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- D2F Components -->
+        <mxCell id="d2f_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="d2f_c1" value="Service Design" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d2f_c2" value="Service Development" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="550" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d2f_c3" value="Service Release" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d2f_c4" value="Defect Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="550" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d2f_c5" value="Requirement Mgmt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d2f_c6" value="Service Catalog" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="550" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- S2D Components -->
+        <mxCell id="s2d_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="720" y="440" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s2d_c1" value="Source Selection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="740" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2d_c2" value="Build Package" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="870" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2d_c3" value="Deploy Release" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="740" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2d_c4" value="Offer Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="870" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2d_c5" value="Offer Consumption" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="740" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2d_c6" value="Change Control" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="870" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- C2R Components -->
+        <mxCell id="c2r_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="440" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c2r_c1" value="Request Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2r_c2" value="Service Level Mgmt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2r_c3" value="Service Monitoring" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2r_c4" value="Incident Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2r_c5" value="Problem Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2r_c6" value="Usage Analytics" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Supporting Activities -->
+        <mxCell id="support_header" value="Supporting Activities" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="660" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="support_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="700" width="1240" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sup1" value="Intelligence &amp;&#xa;Reporting" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="120" y="710" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sup2" value="Governance, Risk&#xa;&amp; Compliance" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="380" y="710" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sup3" value="Sourcing &amp;&#xa;Vendor Mgmt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="640" y="710" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sup4" value="Finance &amp;&#xa;Assets" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="900" y="710" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sup5" value="Resource &amp;&#xa;Project Mgmt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="710" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="780" width="500" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="785" width="60" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leg1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="810" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1_text" value="S2P: Strategy to Portfolio" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="125" y="810" width="150" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leg2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="100" y="835" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2_text" value="D2F: Design to Fulfill" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="125" y="835" width="150" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leg3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="810" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3_text" value="S2D: Source to Deploy" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="325" y="810" width="150" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leg4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="835" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4_text" value="C2R: Consume to Retire" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="325" y="835" width="150" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
