@@ -1,503 +1,500 @@
 > **🤖 AI-Maintained** — This repository is maintained by AI agents. Human commits (perhaps) zero. Liability (certainly) none. Fun (definitely) infinite.
 
-1|# IT4IT Skill - IT 管理参考架构
-2|
-3|## 概述
-4|
-5|IT4IT 是 The Open Group 发布的 IT 管理参考架构，为管理 IT 业务提供了规范性的框架。它定义了 IT 价值链、价值流、功能组件和数据对象，帮助 IT 组织实现端到端的 IT 服务管理。
-6|
-7|## 何时使用
-8|
-9|当用户需要：
-10|- 了解或应用 IT4IT 参考架构
-11|- 设计 IT 服务管理体系
-12|- 优化 IT 价值链和价值流
-13|- 选择和集成 IT 管理工具
-14|- 建立 IT 运营模型
-15|- 实施 DevOps 和敏捷 IT
-16|
-17|## IT4IT 核心概念
-18|
-19|### IT 价值链
-20|
-21|```
-22|┌─────────────────────────────────────────────────────────────────────────────┐
-23|│                           IT4IT Value Chain                                  │
-24|├─────────────────────────────────────────────────────────────────────────────┤
-25|│                                                                              │
-26|│  ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐     │
-27|│  │  Strategy   │   │   Design    │   │   Source    │   │   Consume   │     │
-28|│  │  to         │──►│   to        │──►│   to        │──►│   to        │     │
-29|│  │  Portfolio  │   │   Fulfill   │   │   Deploy    │   │   Retire    │     │
-30|│  │  (S2P)      │   │   (D2F)     │   │   (S2D)     │   │   (C2R)     │     │
-31|│  └─────────────┘   └─────────────┘   └─────────────┘   └─────────────┘     │
-32|│        │                 │                 │                 │              │
-33|│        ▼                 ▼                 ▼                 ▼              │
-34|│  ┌─────────────────────────────────────────────────────────────────────┐   │
-35|│  │              Supporting Activities & Governance                      │   │
-36|│  │  • Intelligence & Reporting  • Governance, Risk & Compliance        │   │
-37|│  │  • Sourcing & Vendor Mgmt    • Finance & Assets                     │   │
-38|│  └─────────────────────────────────────────────────────────────────────┘   │
-39|│                                                                              │
-40|└─────────────────────────────────────────────────────────────────────────────┘
-41|```
-42|
-43|### 四大价值流
-44|
-45|| 价值流 | 英文名称 | 核心目标 | 关键产出 |
-46||--------|---------|---------|---------|
-47|| **S2P** | Strategy to Portfolio | 将业务战略转化为 IT 投资组合 | IT Portfolio |
-48|| **D2F** | Design to Fulfill | 设计并交付 IT 服务 | Service Release |
-49|| **S2D** | Source to Deploy | 采购和部署 IT 资源 | Deployed Components |
-50|| **C2R** | Consume to Retire | 管理服务消费到退役 | Service Experience |
-51|
-52|## 价值流详解
-53|
-54|### Value Stream 1: Strategy to Portfolio (S2P)
-55|
-56|**目标**: 将业务需求转化为经过优先级排序的 IT 投资组合
-57|
-58|```
-59|┌─────────────────────────────────────────────────────────────────────────────┐
-60|│                    Strategy to Portfolio (S2P)                               │
-61|├─────────────────────────────────────────────────────────────────────────────┤
-62|│                                                                              │
-63|│  输入: Business Strategy, Business Demand                                    │
-64|│                                                                              │
-65|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-66|│  │   Strategy    │    │   Portfolio   │    │   Proposal    │               │
-67|│  │   Management  │───►│   Demand      │───►│   Management  │               │
-68|│  │               │    │   Management  │    │               │               │
-69|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-70|│         │                    │                    │                         │
-71|│         ▼                    ▼                    ▼                         │
-72|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-73|│  │   Policy      │    │   Portfolio   │    │   Portfolio   │               │
-74|│  │   Management  │    │   Planning    │    │   Approval    │               │
-75|│  │               │    │               │    │               │               │
-76|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-77|│                                                                              │
-78|│  输出: Approved IT Portfolio, Conceptual Service                            │
-79|│                                                                              │
-80|│  关键数据对象:                                                               │
-81|│  • Conceptual Service                                                        │
-82|│  • Initiative                                                                │
-83|│  • Service Portfolio                                                         │
-84|│  • IT Investment                                                             │
-85|│                                                                              │
-86|└─────────────────────────────────────────────────────────────────────────────┘
-87|```
-88|
-89|**功能组件**:
-90|
-91|| 功能组件 | 描述 |
-92||---------|------|
-93|| Strategy Management | 管理 IT 战略与业务战略的对齐 |
-94|| Portfolio Demand Management | 收集和管理业务需求 |
-95|| Proposal Management | 管理 IT 提案和业务案例 |
-96|| Policy Management | 定义和管理 IT 策略 |
-97|| Portfolio Planning | 规划 IT 投资组合 |
-98|| Portfolio Approval | 审批投资组合项目 |
-99|
-100|---
-101|
-102|### Value Stream 2: Design to Fulfill (D2F)
-103|
-104|**目标**: 设计、开发和交付 IT 服务
-105|
-106|```
-107|┌─────────────────────────────────────────────────────────────────────────────┐
-108|│                      Design to Fulfill (D2F)                                 │
-109|├─────────────────────────────────────────────────────────────────────────────┤
-110|│                                                                              │
-111|│  输入: Conceptual Service, Requirements                                      │
-112|│                                                                              │
-113|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-114|│  │   Service     │    │   Service     │    │   Service     │               │
-115|│  │   Design      │───►│   Development │───►│   Release     │               │
-116|│  │               │    │               │    │               │               │
-117|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-118|│         │                    │                    │                         │
-119|│         ▼                    ▼                    ▼                         │
-120|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-121|│  │   Functional  │    │   Defect      │    │   Service     │               │
-122|│  │   Requirement │    │   Management  │    │   Catalog     │               │
-123|│  │   Management  │    │               │    │   Management  │               │
-124|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-125|│                                                                              │
-126|│  输出: Logical Service, Service Release, Service Catalog                    │
-127|│                                                                              │
-128|│  关键数据对象:                                                               │
-129|│  • Logical Service                                                           │
-130|│  • Service Release                                                           │
-131|│  • Requirement                                                               │
-132|│  • Defect                                                                    │
-133|│  • Service Blueprint                                                         │
-134|│                                                                              │
-135|└─────────────────────────────────────────────────────────────────────────────┘
-136|```
-137|
-138|**功能组件**:
-139|
-140|| 功能组件 | 描述 |
-141||---------|------|
-142|| Service Design | 设计服务架构和蓝图 |
-143|| Service Development | 开发和构建服务 |
-144|| Service Release | 管理服务发布 |
-145|| Functional Requirement Management | 管理功能需求 |
-146|| Defect Management | 管理缺陷和问题 |
-147|| Service Catalog Management | 管理服务目录 |
-148|
-149|---
-150|
-151|### Value Stream 3: Source to Deploy (S2D)
-152|
-153|**目标**: 采购、构建和部署 IT 资源
-154|
-155|```
-156|┌─────────────────────────────────────────────────────────────────────────────┐
-157|│                       Source to Deploy (S2D)                                 │
-158|├─────────────────────────────────────────────────────────────────────────────┤
-159|│                                                                              │
-160|│  输入: Service Release, Deployment Requirements                              │
-161|│                                                                              │
-162|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-163|│  │   Source      │    │   Build       │    │   Deploy      │               │
-164|│  │   Selection   │───►│   Package     │───►│   Release     │               │
-165|│  │               │    │               │    │               │               │
-166|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-167|│         │                    │                    │                         │
-168|│         ▼                    ▼                    ▼                         │
-169|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-170|│  │   Offer       │    │   Offer       │    │   Change      │               │
-171|│  │   Management  │    │   Consumption │    │   Control     │               │
-172|│  │               │    │               │    │               │               │
-173|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-174|│                                                                              │
-175|│  输出: Deployed Service, Actual Service, Configuration Items                │
-176|│                                                                              │
-177|│  关键数据对象:                                                               │
-178|│  • Actual Service                                                            │
-179|│  • Source Blueprint                                                          │
-180|│  • Release Package                                                           │
-181|│  • Configuration Item (CI)                                                   │
-182|│  • Change Record                                                             │
-183|│                                                                              │
-184|└─────────────────────────────────────────────────────────────────────────────┘
-185|```
-186|
-187|**功能组件**:
-188|
-189|| 功能组件 | 描述 |
-190||---------|------|
-191|| Source Selection | 选择供应商和资源来源 |
-192|| Build Package | 构建部署包 |
-193|| Deploy Release | 部署发布包到环境 |
-194|| Offer Management | 管理供应商产品 |
-195|| Offer Consumption | 管理资源消费 |
-196|| Change Control | 控制变更流程 |
-197|
-198|---
-199|
-200|### Value Stream 4: Consume to Retire (C2R)
-201|
-202|**目标**: 管理服务的消费、支持和退役
-203|
-204|```
-205|┌─────────────────────────────────────────────────────────────────────────────┐
-206|│                       Consume to Retire (C2R)                                │
-207|├─────────────────────────────────────────────────────────────────────────────┤
-208|│                                                                              │
-209|│  输入: Actual Service, Service Request                                       │
-210|│                                                                              │
-211|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-212|│  │   Request     │    │   Service     │    │   Service     │               │
-213|│  │   Management  │───►│   Level       │───►│   Monitoring  │               │
-214|│  │               │    │   Management  │    │               │               │
-215|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-216|│         │                    │                    │                         │
-217|│         ▼                    ▼                    ▼                         │
-218|│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
-219|│  │   Incident    │    │   Problem     │    │   Usage &     │               │
-220|│  │   Management  │    │   Management  │    │   Consumption │               │
-221|│  │               │    │               │    │   Analytics   │               │
-222|│  └───────────────┘    └───────────────┘    └───────────────┘               │
-223|│                                                                              │
-224|│  输出: Service Experience, Usage Data, Retirement Candidate                 │
-225|│                                                                              │
-226|│  关键数据对象:                                                               │
-227|│  • Service Contract                                                          │
-228|│  • Incident Record                                                           │
-229|│  • Problem Record                                                            │
-230|│  • Service Level Agreement (SLA)                                             │
-231|│  • Usage Record                                                              │
-232|│                                                                              │
-233|└─────────────────────────────────────────────────────────────────────────────┘
-234|```
-235|
-236|**功能组件**:
-237|
-238|| 功能组件 | 描述 |
-239||---------|------|
-240|| Request Management | 管理服务请求 |
-241|| Service Level Management | 管理服务级别 |
-242|| Service Monitoring | 监控服务状态 |
-243|| Incident Management | 管理事件 |
-244|| Problem Management | 管理问题 |
-245|| Usage & Consumption Analytics | 分析使用和消费数据 |
-246|
-247|---
-248|
-249|## IT4IT 数据对象模型
-250|
-251|### 核心数据对象
-252|
-253|```
-254|┌─────────────────────────────────────────────────────────────────────────────┐
-255|│                      IT4IT Data Object Model                                 │
-256|├─────────────────────────────────────────────────────────────────────────────┤
-257|│                                                                              │
-258|│  Service Backbone (服务主干):                                                │
-259|│                                                                              │
-260|│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────┐  │
-261|│  │ Conceptual   │───►│  Logical     │───►│  Actual      │───►│ Service  │  │
-262|│  │ Service      │    │  Service     │    │  Service     │    │ Contract │  │
-263|│  │ (S2P)        │    │  (D2F)       │    │  (S2D)       │    │ (C2R)    │  │
-264|│  └──────────────┘    └──────────────┘    └──────────────┘    └──────────┘  │
-265|│                                                                              │
-266|│  Supporting Objects:                                                         │
-267|│                                                                              │
-268|│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐                   │
-269|│  │ Initiative   │    │ Requirement  │    │ Release      │                   │
-270|│  │              │    │              │    │ Package      │                   │
-271|│  └──────────────┘    └──────────────┘    └──────────────┘                   │
-272|│                                                                              │
-273|│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐                   │
-274|│  │ Change       │    │ Incident     │    │ Problem      │                   │
-275|│  │ Record       │    │ Record       │    │ Record       │                   │
-276|│  └──────────────┘    └──────────────┘    └──────────────┘                   │
-277|│                                                                              │
-278|│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐                   │
-279|│  │ Configuration│    │ Knowledge    │    │ Usage        │                   │
-280|│  │ Item (CI)    │    │ Article      │    │ Record       │                   │
-281|│  └──────────────┘    └──────────────┘    └──────────────┘                   │
-282|│                                                                              │
-283|└─────────────────────────────────────────────────────────────────────────────┘
-284|```
-285|
-286|### 服务主干 (Service Backbone)
-287|
-288|服务主干是 IT4IT 的核心概念，贯穿四个价值流：
-289|
-290|| 数据对象 | 所属价值流 | 描述 |
-291||---------|-----------|------|
-292|| **Conceptual Service** | S2P | 服务的概念定义，包含业务价值 |
-293|| **Logical Service** | D2F | 服务的逻辑设计，包含架构蓝图 |
-294|| **Actual Service** | S2D | 服务的实际部署实例 |
-295|| **Service Contract** | C2R | 服务的消费合同，包含 SLA |
-296|
-297|---
-298|
-299|## 与其他框架的关系
-300|
-301|### IT4IT vs ITIL
-302|
-303|| 维度 | IT4IT | ITIL |
-304||------|-------|------|
-305|| **定位** | 参考架构 | 最佳实践 |
-306|| **范围** | 端到端 IT 价值链 | IT 服务管理流程 |
-307|| **视角** | 工具和自动化驱动 | 流程和人员驱动 |
-308|| **数据** | 明确的数据对象模型 | 流程数据隐含 |
-309|| **关系** | 互补 | 互补 |
-310|
-311|### IT4IT 与 ITIL 流程映射
-312|
-313|| IT4IT 功能组件 | ITIL 流程 |
-314||---------------|----------|
-315|| Service Design | Service Design |
-316|| Service Release | Release Management |
-317|| Change Control | Change Management |
-318|| Incident Management | Incident Management |
-319|| Problem Management | Problem Management |
-320|| Service Level Management | Service Level Management |
-321|| Service Catalog Management | Service Catalog Management |
-322|
-323|### IT4IT vs TOGAF
-324|
-325|| 维度 | IT4IT | TOGAF |
-326||------|-------|-------|
-327|| **定位** | IT 运营参考架构 | 企业架构框架 |
-328|| **范围** | IT 服务管理 | 全企业架构 |
-329|| **视角** | IT 内部运营 | 业务-IT 对齐 |
-330|| **互补** | 可作为 TOGAF 技术架构的一部分 | 提供更广泛的架构方法 |
-331|
-332|---
-333|
-334|## 实施指南
-335|
-336|### 实施路径
-337|
-338|```
-339|┌─────────────────────────────────────────────────────────────────────────────┐
-340|│                    IT4IT Implementation Roadmap                              │
-341|├─────────────────────────────────────────────────────────────────────────────┤
-342|│                                                                              │
-343|│  Phase 1: Foundation (基础)                                                  │
-344|│  ├── 评估当前 IT 管理成熟度                                                   │
-345|│  ├── 识别价值流差距                                                          │
-346|│  ├── 定义目标运营模型                                                         │
-347|│  └── 建立治理框架                                                            │
-348|│                                                                              │
-349|│  Phase 2: Core Value Streams (核心价值流)                                    │
-350|│  ├── 实施 S2D (Source to Deploy)                                            │
-351|│  │   └── CI/CD 管道、配置管理、变更控制                                       │
-352|│  ├── 实施 C2R (Consume to Retire)                                           │
-353|│  │   └── 服务台、事件管理、问题管理                                           │
-354|│  └── 集成和自动化                                                            │
-355|│                                                                              │
-356|│  Phase 3: Extended Value Streams (扩展价值流)                                │
-357|│  ├── 实施 D2F (Design to Fulfill)                                           │
-358|│  │   └── 服务设计、开发、发布管理                                             │
-359|│  ├── 实施 S2P (Strategy to Portfolio)                                       │
-360|│  │   └── 需求管理、组合规划、投资管理                                         │
-361|│  └── 端到端集成                                                              │
-362|│                                                                              │
-363|│  Phase 4: Optimization (优化)                                                │
-364|│  ├── 数据驱动的决策                                                          │
-365|│  ├── 持续改进                                                                │
-366|│  └── AI/ML 增强                                                              │
-367|│                                                                              │
-368|└─────────────────────────────────────────────────────────────────────────────┘
-369|```
-370|
-371|### 工具映射
-372|
-373|将 IT4IT 功能组件映射到常见工具：
-374|
-375|| 功能组件 | 开源工具 | 商业工具 |
-376||---------|---------|---------|
-377|| Service Design | Archi, Draw.io | ServiceNow, Sparx EA |
-378|| Service Development | GitLab, Jenkins | Azure DevOps, Jira |
-379|| Service Release | ArgoCD, Flux | ServiceNow, BMC |
-380|| Build Package | Docker, Kubernetes | AWS, Azure |
-381|| Deploy Release | Ansible, Terraform | Puppet, Chef |
-382|| Change Control | GitLab, ServiceNow | ServiceNow, BMC |
-383|| Incident Management | Zammad, osTicket | ServiceNow, Jira SM |
-384|| Problem Management | - | ServiceNow, BMC |
-385|| Service Monitoring | Prometheus, Grafana | Datadog, Splunk |
-386|| CMDB | i-doit, CMDBuild | ServiceNow, BMC |
-387|
-388|---
-389|
-390|## 最佳实践
-391|
-392|### 1. 以服务为中心
-393|
-394|```
-395|建议:
-396|- 建立统一的服务定义标准
-397|- 使用服务主干贯穿各价值流
-398|- 确保服务数据的一致性和完整性
-399|```
-400|
-401|### 2. 自动化优先
-402|
-403|```
-404|建议:
-405|- 优先自动化重复性任务
-406|- 建立自动化工具链
-407|- 实现端到端的自动化流水线
-408|- 关注 AIOps 和智能自动化
-409|```
-410|
-411|### 3. 数据驱动
-412|
-413|```
-414|建议:
-415|- 定义清晰的数据对象模型
-416|- 确保数据质量和完整性
-417|- 建立数据治理机制
-418|- 利用数据进行决策和优化
-419|```
-420|
-421|### 4. 渐进式实施
-422|
-423|```
-424|建议:
-425|- 从核心价值流开始（S2D, C2R）
-426|- 逐步扩展到完整价值链
-427|- 持续评估和调整
-428|- 关注快速价值交付
-429|```
-430|
-431|### 5. 工具整合
-432|
-433|```
-434|建议:
-435|- 避免工具孤岛
-436|- 建立工具集成架构
-437|- 使用 API 和事件驱动集成
-438|- 考虑平台化方案
-439|```
-440|
-441|---
-442|
-443|## 资源文件
-444|
-445|### 模板文件
-446|- `assets/it4it-value-chain.drawio` - IT4IT 价值链图
-447|
-448|### 参考文档
-449|- `references/value-stream-guide.md` - 价值流详解
-450|- `references/data-object-model.md` - 数据对象模型
-451|- `references/tool-mapping-guide.md` - 工具映射指南
-452|
-453|### 脚本工具
-454|- `scripts/validate-it4it.js` - IT4IT 合规验证脚本
-455|
-456|---
-457|
-458|## 常见问题
-459|
-460|### Q1: IT4IT 和 ITIL 应该如何结合使用？
-461|
-462|A: IT4IT 提供参考架构和数据模型，ITIL 提供流程最佳实践：
-463|- 使用 IT4IT 定义工具架构和数据流
-464|- 使用 ITIL 定义流程和角色
-465|- 两者互补而非替代
-466|
-467|### Q2: 如何确定实施的优先级？
-468|
-469|A: 建议优先级：
-470|1. **S2D + C2R**: 核心运营能力，直接影响服务交付
-471|2. **D2F**: 支持敏捷和 DevOps
-472|3. **S2P**: 战略对齐和投资管理
-473|
-474|### Q3: 小型 IT 组织是否需要完整实施 IT4IT？
-475|
-476|A: 不需要：
-477|- 根据组织规模选择关键功能组件
-478|- 从核心价值流开始
-479|- 渐进式扩展
-480|
-481|### Q4: 如何衡量 IT4IT 实施效果？
-482|
-483|A: 关键指标：
-484|- 服务交付周期时间
-485|- 变更成功率
-486|- 事件解决时间
-487|- 服务可用性
-488|- IT 成本效率
-489|
-490|---
-491|
-492|## 更新日志
-493|
-494|- **v1.0.0** (2025-01-24): 初始版本
-495|  - IT4IT 价值链和四大价值流
-496|  - 功能组件详解
-497|  - 数据对象模型
-498|  - 实施指南和最佳实践
-499|  - 工具映射
-500|
-501|
+# IT4IT Skill - IT 管理参考架构
+
+## 概述
+
+IT4IT 是 The Open Group 发布的 IT 管理参考架构，为管理 IT 业务提供了规范性的框架。它定义了 IT 价值链、价值流、功能组件和数据对象，帮助 IT 组织实现端到端的 IT 服务管理。
+
+## 何时使用
+
+当用户需要：
+- 了解或应用 IT4IT 参考架构
+- 设计 IT 服务管理体系
+- 优化 IT 价值链和价值流
+- 选择和集成 IT 管理工具
+- 建立 IT 运营模型
+- 实施 DevOps 和敏捷 IT
+
+## IT4IT 核心概念
+
+### IT 价值链
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           IT4IT Value Chain                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐     │
+│  │  Strategy   │   │   Design    │   │   Source    │   │   Consume   │     │
+│  │  to         │──►│   to        │──►│   to        │──►│   to        │     │
+│  │  Portfolio  │   │   Fulfill   │   │   Deploy    │   │   Retire    │     │
+│  │  (S2P)      │   │   (D2F)     │   │   (S2D)     │   │   (C2R)     │     │
+│  └─────────────┘   └─────────────┘   └─────────────┘   └─────────────┘     │
+│        │                 │                 │                 │              │
+│        ▼                 ▼                 ▼                 ▼              │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │              Supporting Activities & Governance                      │   │
+│  │  • Intelligence & Reporting  • Governance, Risk & Compliance        │   │
+│  │  • Sourcing & Vendor Mgmt    • Finance & Assets                     │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 四大价值流
+
+| 价值流 | 英文名称 | 核心目标 | 关键产出 |
+|--------|---------|---------|---------|
+| **S2P** | Strategy to Portfolio | 将业务战略转化为 IT 投资组合 | IT Portfolio |
+| **D2F** | Design to Fulfill | 设计并交付 IT 服务 | Service Release |
+| **S2D** | Source to Deploy | 采购和部署 IT 资源 | Deployed Components |
+| **C2R** | Consume to Retire | 管理服务消费到退役 | Service Experience |
+
+## 价值流详解
+
+### Value Stream 1: Strategy to Portfolio (S2P)
+
+**目标**: 将业务需求转化为经过优先级排序的 IT 投资组合
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    Strategy to Portfolio (S2P)                               │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  输入: Business Strategy, Business Demand                                    │
+│                                                                              │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Strategy    │    │   Portfolio   │    │   Proposal    │               │
+│  │   Management  │───►│   Demand      │───►│   Management  │               │
+│  │               │    │   Management  │    │               │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│         │                    │                    │                         │
+│         ▼                    ▼                    ▼                         │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Policy      │    │   Portfolio   │    │   Portfolio   │               │
+│  │   Management  │    │   Planning    │    │   Approval    │               │
+│  │               │    │               │    │               │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│                                                                              │
+│  输出: Approved IT Portfolio, Conceptual Service                            │
+│                                                                              │
+│  关键数据对象:                                                               │
+│  • Conceptual Service                                                        │
+│  • Initiative                                                                │
+│  • Service Portfolio                                                         │
+│  • IT Investment                                                             │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+**功能组件**:
+
+| 功能组件 | 描述 |
+|---------|------|
+| Strategy Management | 管理 IT 战略与业务战略的对齐 |
+| Portfolio Demand Management | 收集和管理业务需求 |
+| Proposal Management | 管理 IT 提案和业务案例 |
+| Policy Management | 定义和管理 IT 策略 |
+| Portfolio Planning | 规划 IT 投资组合 |
+| Portfolio Approval | 审批投资组合项目 |
+
+---
+
+### Value Stream 2: Design to Fulfill (D2F)
+
+**目标**: 设计、开发和交付 IT 服务
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      Design to Fulfill (D2F)                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  输入: Conceptual Service, Requirements                                      │
+│                                                                              │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Service     │    │   Service     │    │   Service     │               │
+│  │   Design      │───►│   Development │───►│   Release     │               │
+│  │               │    │               │    │               │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│         │                    │                    │                         │
+│         ▼                    ▼                    ▼                         │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Functional  │    │   Defect      │    │   Service     │               │
+│  │   Requirement │    │   Management  │    │   Catalog     │               │
+│  │   Management  │    │               │    │   Management  │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│                                                                              │
+│  输出: Logical Service, Service Release, Service Catalog                    │
+│                                                                              │
+│  关键数据对象:                                                               │
+│  • Logical Service                                                           │
+│  • Service Release                                                           │
+│  • Requirement                                                               │
+│  • Defect                                                                    │
+│  • Service Blueprint                                                         │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+**功能组件**:
+
+| 功能组件 | 描述 |
+|---------|------|
+| Service Design | 设计服务架构和蓝图 |
+| Service Development | 开发和构建服务 |
+| Service Release | 管理服务发布 |
+| Functional Requirement Management | 管理功能需求 |
+| Defect Management | 管理缺陷和问题 |
+| Service Catalog Management | 管理服务目录 |
+
+---
+
+### Value Stream 3: Source to Deploy (S2D)
+
+**目标**: 采购、构建和部署 IT 资源
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       Source to Deploy (S2D)                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  输入: Service Release, Deployment Requirements                              │
+│                                                                              │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Source      │    │   Build       │    │   Deploy      │               │
+│  │   Selection   │───►│   Package     │───►│   Release     │               │
+│  │               │    │               │    │               │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│         │                    │                    │                         │
+│         ▼                    ▼                    ▼                         │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Offer       │    │   Offer       │    │   Change      │               │
+│  │   Management  │    │   Consumption │    │   Control     │               │
+│  │               │    │               │    │               │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│                                                                              │
+│  输出: Deployed Service, Actual Service, Configuration Items                │
+│                                                                              │
+│  关键数据对象:                                                               │
+│  • Actual Service                                                            │
+│  • Source Blueprint                                                          │
+│  • Release Package                                                           │
+│  • Configuration Item (CI)                                                   │
+│  • Change Record                                                             │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+**功能组件**:
+
+| 功能组件 | 描述 |
+|---------|------|
+| Source Selection | 选择供应商和资源来源 |
+| Build Package | 构建部署包 |
+| Deploy Release | 部署发布包到环境 |
+| Offer Management | 管理供应商产品 |
+| Offer Consumption | 管理资源消费 |
+| Change Control | 控制变更流程 |
+
+---
+
+### Value Stream 4: Consume to Retire (C2R)
+
+**目标**: 管理服务的消费、支持和退役
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       Consume to Retire (C2R)                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  输入: Actual Service, Service Request                                       │
+│                                                                              │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Request     │    │   Service     │    │   Service     │               │
+│  │   Management  │───►│   Level       │───►│   Monitoring  │               │
+│  │               │    │   Management  │    │               │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│         │                    │                    │                         │
+│         ▼                    ▼                    ▼                         │
+│  ┌───────────────┐    ┌───────────────┐    ┌───────────────┐               │
+│  │   Incident    │    │   Problem     │    │   Usage &     │               │
+│  │   Management  │    │   Management  │    │   Consumption │               │
+│  │               │    │               │    │   Analytics   │               │
+│  └───────────────┘    └───────────────┘    └───────────────┘               │
+│                                                                              │
+│  输出: Service Experience, Usage Data, Retirement Candidate                 │
+│                                                                              │
+│  关键数据对象:                                                               │
+│  • Service Contract                                                          │
+│  • Incident Record                                                           │
+│  • Problem Record                                                            │
+│  • Service Level Agreement (SLA)                                             │
+│  • Usage Record                                                              │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+**功能组件**:
+
+| 功能组件 | 描述 |
+|---------|------|
+| Request Management | 管理服务请求 |
+| Service Level Management | 管理服务级别 |
+| Service Monitoring | 监控服务状态 |
+| Incident Management | 管理事件 |
+| Problem Management | 管理问题 |
+| Usage & Consumption Analytics | 分析使用和消费数据 |
+
+---
+
+## IT4IT 数据对象模型
+
+### 核心数据对象
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      IT4IT Data Object Model                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  Service Backbone (服务主干):                                                │
+│                                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────┐  │
+│  │ Conceptual   │───►│  Logical     │───►│  Actual      │───►│ Service  │  │
+│  │ Service      │    │  Service     │    │  Service     │    │ Contract │  │
+│  │ (S2P)        │    │  (D2F)       │    │  (S2D)       │    │ (C2R)    │  │
+│  └──────────────┘    └──────────────┘    └──────────────┘    └──────────┘  │
+│                                                                              │
+│  Supporting Objects:                                                         │
+│                                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐                   │
+│  │ Initiative   │    │ Requirement  │    │ Release      │                   │
+│  │              │    │              │    │ Package      │                   │
+│  └──────────────┘    └──────────────┘    └──────────────┘                   │
+│                                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐                   │
+│  │ Change       │    │ Incident     │    │ Problem      │                   │
+│  │ Record       │    │ Record       │    │ Record       │                   │
+│  └──────────────┘    └──────────────┘    └──────────────┘                   │
+│                                                                              │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐                   │
+│  │ Configuration│    │ Knowledge    │    │ Usage        │                   │
+│  │ Item (CI)    │    │ Article      │    │ Record       │                   │
+│  └──────────────┘    └──────────────┘    └──────────────┘                   │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 服务主干 (Service Backbone)
+
+服务主干是 IT4IT 的核心概念，贯穿四个价值流：
+
+| 数据对象 | 所属价值流 | 描述 |
+|---------|-----------|------|
+| **Conceptual Service** | S2P | 服务的概念定义，包含业务价值 |
+| **Logical Service** | D2F | 服务的逻辑设计，包含架构蓝图 |
+| **Actual Service** | S2D | 服务的实际部署实例 |
+| **Service Contract** | C2R | 服务的消费合同，包含 SLA |
+
+---
+
+## 与其他框架的关系
+
+### IT4IT vs ITIL
+
+| 维度 | IT4IT | ITIL |
+|------|-------|------|
+| **定位** | 参考架构 | 最佳实践 |
+| **范围** | 端到端 IT 价值链 | IT 服务管理流程 |
+| **视角** | 工具和自动化驱动 | 流程和人员驱动 |
+| **数据** | 明确的数据对象模型 | 流程数据隐含 |
+| **关系** | 互补 | 互补 |
+
+### IT4IT 与 ITIL 流程映射
+
+| IT4IT 功能组件 | ITIL 流程 |
+|---------------|----------|
+| Service Design | Service Design |
+| Service Release | Release Management |
+| Change Control | Change Management |
+| Incident Management | Incident Management |
+| Problem Management | Problem Management |
+| Service Level Management | Service Level Management |
+| Service Catalog Management | Service Catalog Management |
+
+### IT4IT vs TOGAF
+
+| 维度 | IT4IT | TOGAF |
+|------|-------|-------|
+| **定位** | IT 运营参考架构 | 企业架构框架 |
+| **范围** | IT 服务管理 | 全企业架构 |
+| **视角** | IT 内部运营 | 业务-IT 对齐 |
+| **互补** | 可作为 TOGAF 技术架构的一部分 | 提供更广泛的架构方法 |
+
+---
+
+## 实施指南
+
+### 实施路径
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    IT4IT Implementation Roadmap                              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  Phase 1: Foundation (基础)                                                  │
+│  ├── 评估当前 IT 管理成熟度                                                   │
+│  ├── 识别价值流差距                                                          │
+│  ├── 定义目标运营模型                                                         │
+│  └── 建立治理框架                                                            │
+│                                                                              │
+│  Phase 2: Core Value Streams (核心价值流)                                    │
+│  ├── 实施 S2D (Source to Deploy)                                            │
+│  │   └── CI/CD 管道、配置管理、变更控制                                       │
+│  ├── 实施 C2R (Consume to Retire)                                           │
+│  │   └── 服务台、事件管理、问题管理                                           │
+│  └── 集成和自动化                                                            │
+│                                                                              │
+│  Phase 3: Extended Value Streams (扩展价值流)                                │
+│  ├── 实施 D2F (Design to Fulfill)                                           │
+│  │   └── 服务设计、开发、发布管理                                             │
+│  ├── 实施 S2P (Strategy to Portfolio)                                       │
+│  │   └── 需求管理、组合规划、投资管理                                         │
+│  └── 端到端集成                                                              │
+│                                                                              │
+│  Phase 4: Optimization (优化)                                                │
+│  ├── 数据驱动的决策                                                          │
+│  ├── 持续改进                                                                │
+│  └── AI/ML 增强                                                              │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 工具映射
+
+将 IT4IT 功能组件映射到常见工具：
+
+| 功能组件 | 开源工具 | 商业工具 |
+|---------|---------|---------|
+| Service Design | Archi, Draw.io | ServiceNow, Sparx EA |
+| Service Development | GitLab, Jenkins | Azure DevOps, Jira |
+| Service Release | ArgoCD, Flux | ServiceNow, BMC |
+| Build Package | Docker, Kubernetes | AWS, Azure |
+| Deploy Release | Ansible, Terraform | Puppet, Chef |
+| Change Control | GitLab, ServiceNow | ServiceNow, BMC |
+| Incident Management | Zammad, osTicket | ServiceNow, Jira SM |
+| Problem Management | - | ServiceNow, BMC |
+| Service Monitoring | Prometheus, Grafana | Datadog, Splunk |
+| CMDB | i-doit, CMDBuild | ServiceNow, BMC |
+
+---
+
+## 最佳实践
+
+### 1. 以服务为中心
+
+```
+建议:
+- 建立统一的服务定义标准
+- 使用服务主干贯穿各价值流
+- 确保服务数据的一致性和完整性
+```
+
+### 2. 自动化优先
+
+```
+建议:
+- 优先自动化重复性任务
+- 建立自动化工具链
+- 实现端到端的自动化流水线
+- 关注 AIOps 和智能自动化
+```
+
+### 3. 数据驱动
+
+```
+建议:
+- 定义清晰的数据对象模型
+- 确保数据质量和完整性
+- 建立数据治理机制
+- 利用数据进行决策和优化
+```
+
+### 4. 渐进式实施
+
+```
+建议:
+- 从核心价值流开始（S2D, C2R）
+- 逐步扩展到完整价值链
+- 持续评估和调整
+- 关注快速价值交付
+```
+
+### 5. 工具整合
+
+```
+建议:
+- 避免工具孤岛
+- 建立工具集成架构
+- 使用 API 和事件驱动集成
+- 考虑平台化方案
+```
+
+---
+
+## 资源文件
+
+### 模板文件
+- `assets/it4it-value-chain.drawio` - IT4IT 价值链图
+
+### 参考文档
+- `references/value-stream-guide.md` - 价值流详解
+- `references/data-object-model.md` - 数据对象模型
+- `references/tool-mapping-guide.md` - 工具映射指南
+
+### 脚本工具
+- `scripts/validate-it4it.js` - IT4IT 合规验证脚本
+
+---
+
+## 常见问题
+
+### Q1: IT4IT 和 ITIL 应该如何结合使用？
+
+A: IT4IT 提供参考架构和数据模型，ITIL 提供流程最佳实践：
+- 使用 IT4IT 定义工具架构和数据流
+- 使用 ITIL 定义流程和角色
+- 两者互补而非替代
+
+### Q2: 如何确定实施的优先级？
+
+A: 建议优先级：
+1. **S2D + C2R**: 核心运营能力，直接影响服务交付
+2. **D2F**: 支持敏捷和 DevOps
+3. **S2P**: 战略对齐和投资管理
+
+### Q3: 小型 IT 组织是否需要完整实施 IT4IT？
+
+A: 不需要：
+- 根据组织规模选择关键功能组件
+- 从核心价值流开始
+- 渐进式扩展
+
+### Q4: 如何衡量 IT4IT 实施效果？
+
+A: 关键指标：
+- 服务交付周期时间
+- 变更成功率
+- 事件解决时间
+- 服务可用性
+- IT 成本效率
+
+---
+
+## 更新日志
+
+- **v1.0.0** (2025-01-24): 初始版本
+  - IT4IT 价值链和四大价值流
+  - 功能组件详解
+  - 数据对象模型
+  - 实施指南和最佳实践
